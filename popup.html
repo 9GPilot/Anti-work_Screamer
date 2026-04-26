@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                width: 280px;
+                padding: 20px;
+                font-family: sans-serif;
+                background: #1a1a2e;
+                color: #eee;
+                margin: 0;
+            }
+
+            h2 {
+                margin: 0 0 16px;
+                font-size: 16px;
+                color: #a78bfa;
+            }
+
+            #tab-count {
+                font-size: 30px;
+                font-weight: bold;
+                color: #fff;
+                text-align: center;
+                margin: 12px 0 4px;
+            }
+
+            #tab-label {
+                text-align: center;
+                color: #888;
+                font-size: 13px;
+                margin-bottom: 20px;
+            }
+
+            #tab-list {
+                list-style: none;
+                padding: 0; 
+                margin: 0;
+                max-height: 220px;
+                overflow-y: auto;
+            }
+
+            #tab-list li {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                padding: 7px 6px;
+                border-radius: 6px;
+                font-size: 12px;
+                color: #ccc;
+                cursor: pointer;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            #tab-list li:hover {
+                background: #2a2a4a;
+            }
+
+             #tab-list li img {
+                width: 14px;
+                height: 14px;
+                flex-shrink: 0;
+            }
+
+            #tab-list li span {
+                flex: 1;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            #tab-list li button {
+                background: none;
+                border: none;
+                cursor: pointer;
+                font-size: 11px;
+                color: #888;
+                padding: 2px 4px;
+                flex-shrink: 0;
+                opacity: 0.5;
+            }
+
+            #tab-list li button:hover {
+                opacity: 1;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <h3>Open Tabs</h3>
+        <div id="timer-section">
+            <div id="timer-display">25:00</div>
+            <button id="start-btn">Start</button>
+            <button id="stop-btn">Stop</button>
+        </div>
+        <div id="tab-count">-</div>
+        <div id="tab-label">tabs open</div>
+        <ul id="tab-list"></ul>
+
+        <script src="popup.js"></script>
+    </body>
+</html>

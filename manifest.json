@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Anti-work Screamer",
+    "version": "1.0",
+    "description": "Once a non-work related tab opens it will scream at you to get back to work",
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Non-work Detector"
+    },
+    "permissions": ["tabs", "offscreen", "storage"],
+    "host_permissions": ["https://api.elevenlabs.io/*"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "options_page": "options.html"
+}

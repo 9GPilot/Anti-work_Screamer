@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "My First Extension",
+  "version": "1.0",
+  "description": "Once a non-work related ",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "My First Extension"
+  },
+  "permissions": ["tabs"]
+}
